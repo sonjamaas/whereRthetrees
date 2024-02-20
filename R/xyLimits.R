@@ -1,4 +1,14 @@
-# function to set x and y limits
+#' A function for calculating the x and y limits of an AOI
+#'
+#' @param xcoord A x coordinate as decimal degree.
+#' @param ycoord A y coordinate as decimal degree.
+#' @param buffer The buffer radius around the position.
+#'
+#' @returns A vector containing the x and y minima and maxima.
+#' @export
+#'
+#' @examples
+#' xyLimits(8.671087, 52.113866, 300)
 xyLimits <- function(xcoord, ycoord, buffer){                                   # xyLimits becomes a function using x and y coordinates and the buffer
 
   # make bounding box out of coordinates

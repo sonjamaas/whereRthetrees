@@ -1,19 +1,23 @@
-Package: whereRthetrees
 Type: Package
-Title: Find the closest Tree/Park to your current Position
+Package: whereRthetrees
+Title: Find the Closest Public Nature Point
 Version: 0.1.0
 Author: Sonja Maas
-Description: Find the closest Tree/Park to your current Position
-License: What license is it under?
-Encoding: UTF-8
-LazyData: true
-Imports: 
-  tidyverse,
-  osmdata,
-  sf,
-  nominatimlite,
-  mapsf,
-  osrm,
-  geos
+Description: Find the closest public nature point to your current
+    Position.  The route is calculated in the "car" profile of osrm,
+    therefore there might be a point that is closer to you if you are by
+    foot or by bike.  For other profiles, please set up a server.
+License: MIT + file LICENSE
 URL: https://github.com/sonjamaas/whereRthetrees
 BugReports: https://github.com/sonjamaas/whereRthetrees/issues
+Imports: 
+    geos,
+    mapsf,
+    nominatimlite,
+    osmdata,
+    osrm,
+    sf,
+    tidyverse
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3

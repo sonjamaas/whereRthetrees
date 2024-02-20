@@ -1,4 +1,16 @@
-# function for the bounding box
+#' A function for determining the bounding box with a specific radius
+#' around a position
+#'
+#' @param xcoord A x coordinate as decimal degree.
+#' @param ycoord A y coordinate as decimal degree.
+#' @param buffer The buffer radius around the position.
+#'
+#' @returns A vector of the bounding box around the position,
+#'     therefore the area of interest.
+#' @export
+#'
+#' @examples
+#' spatialExtent(8.671087, 52.113866, 300)
 spatialExtent <- function(xcoord, ycoord, buffer){                              # spatialExtent becomes a function using x and y coordinates as well as the buffer,
   # which is the area in which the nature points will be searched for
   # make bounding box out of coordinates

@@ -1,3 +1,33 @@
+#' A function to plot the choosen OSM features
+#'
+#' @param streets A simple feature collection of OSM-features.
+#' @param river A simple feature collection of OSM-features.
+#' @param forest A simple feature collection of OSM-features.
+#' @param specialForest A simple feature collection of OSM-features.
+#' @param wood A simple feature collection of OSM-features.
+#' @param singleTree A simple feature collection of OSM-features.
+#' @param treeLine A simple feature collection of OSM-features.
+#' @param grassland A simple feature collection of OSM-features.
+#' @param meadow A simple feature collection of OSM-features.
+#' @param park A simple feature collection of OSM-features.
+#' @param garden A simple feature collection of OSM-features.
+#' @param natureReserve A simple feature collection of OSM-features.
+#' @param pov A simple feature point.
+#' @param xlim A vector.
+#' @param ylim A vector.
+#' @param closestNature  A simple feature point.
+#' @param route A simple feature line.
+#'
+#' @returns The final plot of the simple feature collections, the users chosen position (POV),
+#'     the closest point of public available nature and the route to get there.
+#' @export
+#'
+#' @examples
+#' finalPlot(streets, river, forest,
+#'           specialForest, wood, singleTree,
+#'           treeLine, grassland,
+#'           meadow, park, garden,
+#'           natureReserve, pov, xlim, ylim, closestNature, route)
 finalPlot <- function(streets, river, forest,                                   # finalPlot becomes a function using all the osm objects and the spatial variables
                       specialForest, wood, singleTree,
                       treeLine, grassland,

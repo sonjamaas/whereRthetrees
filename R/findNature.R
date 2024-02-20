@@ -1,4 +1,28 @@
-# function to find the closest nature point from osm
+#' A function to find the closest point of public nature
+#'
+#' @param streets A simple feature collection of OSM-features.
+#' @param river A simple feature collection of OSM-features.
+#' @param forest A simple feature collection of OSM-features.
+#' @param specialForest A simple feature collection of OSM-features.
+#' @param wood A simple feature collection of OSM-features.
+#' @param singleTree A simple feature collection of OSM-features.
+#' @param treeLine A simple feature collection of OSM-features.
+#' @param grassland A simple feature collection of OSM-features.
+#' @param meadow A simple feature collection of OSM-features.
+#' @param park A simple feature collection of OSM-features.
+#' @param garden A simple feature collection of OSM-features.
+#' @param natureReserve A simple feature collection of OSM-features.
+#' @param pov A simple feature of type point.
+#'
+#' @returns A sf object of the closest available public nature
+#' @export
+#'
+#' @examples
+#' findNature(streets, river, forest,
+#'           specialForest, wood, singleTree,
+#'           treeLine, grassland,
+#'           meadow, park, garden,
+#'           natureReserve, pov)
 findNature <- function(streets, river, forest, specialForest, wood, singleTree, # findNature fuction uses the osm features and the pov
                        treeLine, grassland, meadow, park, garden,
                        natureReserve, pov){
