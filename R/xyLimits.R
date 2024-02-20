@@ -2,7 +2,7 @@
 #'
 #' @param xcoord A x coordinate as decimal degree.
 #' @param ycoord A y coordinate as decimal degree.
-#' @param buffer The buffer radius around the position.
+#' @param buffer The buffer radius around the position [m].
 #'
 #' @returns A vector containing the x and y minima and maxima.
 #' @export

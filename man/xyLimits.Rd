@@ -11,7 +11,7 @@ xyLimits(xcoord, ycoord, buffer)
 
 \item{ycoord}{A y coordinate as decimal degree.}
 
-\item{buffer}{The buffer radius around the position.}
+\item{buffer}{The buffer radius around the position [m].}
 }
 \value{
 A vector containing the x and y minima and maxima.

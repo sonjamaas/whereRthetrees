@@ -1,4 +1,17 @@
-# function to extract all features from osm, calculate the closest nature point and plot
+#' A function to find the closest public nature area around you
+#'
+#' @param x A x coordinate as decimal degree.
+#' @param y A y coordinate as decimal degree.
+#' @param buffer The buffer radius around the position [m]. If too big,
+#'     an error will occur because this package is using the demo-server of osrm
+#'     which restricts the query size to 10000.
+#'
+#' @returns A map of the nature areas around the given position, with a
+#'     route pointing to the closest one.
+#' @export
+#'
+#' @examples
+#' whereRtheTrees(8.671087, 52.113866, 300)
 whereRthetrees <- function(x,y,buffer){                                         # whereRtheTrees function uses the x and y coordinates as well as the buffer area
 
   # get spatial variables
