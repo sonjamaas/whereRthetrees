@@ -10,7 +10,7 @@ Description: Find the closest public nature point to your current
 License: MIT + file LICENSE
 URL: https://github.com/sonjamaas/whereRthetrees
 BugReports: https://github.com/sonjamaas/whereRthetrees/issues
-Imports: 
+Depends: 
     geos,
     mapsf,
     nominatimlite,
