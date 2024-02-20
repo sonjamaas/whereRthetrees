@@ -1,0 +1,17 @@
+Package: whereRthetrees
+Type: Package
+Title: Find the closest Tree/Park to your current Position
+Version: 0.1.0
+Author: Sonja Maas
+Description: Find the closest Tree/Park to your current Position
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  tidyverse,
+  osmdata,
+  sf,
+  nominatimlite,
+  mapsf,
+  osrm,
+  geos
