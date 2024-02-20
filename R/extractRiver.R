@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "waterway" and the value "river".
 #' @examples
 #' extractRiver(aoi)
+#' @keywords internal
 extractRiver <- function(aoi){
   river <- aoi%>%
     opq()%>%

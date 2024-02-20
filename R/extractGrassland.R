@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "nature" and the values "grassland", "scrub" and "shrubbery".
 #' @examples
 #' extractGrassland(aoi)
+#' @keywords internal
 extractGrassland <- function(aoi){
   grasslandAndBushes <- aoi%>%
     opq()%>%

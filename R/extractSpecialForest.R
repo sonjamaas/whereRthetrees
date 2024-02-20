@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "leaf_type" and the values "mixed", "coniferous" and "deciduous".
 #' @examples
 #' extractSpecialForest(aoi)
+#' @keywords internal
 extractSpecialForest <- function(aoi){
   specialforest <- aoi%>%
     opq()%>%

@@ -17,5 +17,5 @@ A function to extract forest areas from osm
 }
 \examples{
 extractForest(aoi)
-
 }
+\keyword{internal}

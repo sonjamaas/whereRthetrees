@@ -18,3 +18,4 @@ A function to extract wine yards from OSM
 \examples{
 extractWine(aoi)
 }
+\keyword{internal}

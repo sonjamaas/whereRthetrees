@@ -15,6 +15,7 @@
 #'     "turning_circle".
 #' @examples
 #' extractStreets(aoi)
+#' @keywords internal
 extractStreets <- function(aoi){                                                # function to extract all Streets in the area of interest
   streets <- aoi%>%                                                             # variable streets: for the aoi,
     opq()%>%                                                                    # build a new overpass query object

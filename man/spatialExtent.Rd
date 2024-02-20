@@ -25,3 +25,4 @@ around a position
 \examples{
 spatialExtent(8.671087, 52.113866, 300)
 }
+\keyword{internal}

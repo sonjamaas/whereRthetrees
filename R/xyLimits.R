@@ -5,10 +5,10 @@
 #' @param buffer The buffer radius around the position [m].
 #'
 #' @returns A vector containing the x and y minima and maxima.
-#' @export
 #'
 #' @examples
 #' xyLimits(8.671087, 52.113866, 300)
+#' @keywords internal
 xyLimits <- function(xcoord, ycoord, buffer){                                   # xyLimits becomes a function using x and y coordinates and the buffer
 
   # make bounding box out of coordinates

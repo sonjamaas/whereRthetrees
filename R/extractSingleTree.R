@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "natural" and the value "tree".
 #' @examples
 #' extractSingleTree(aoi)
+#' @keywords internal
 extractSingleTree <- function(aoi){
   singleTree <- aoi%>%
     opq()%>%

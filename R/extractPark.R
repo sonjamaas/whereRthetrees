@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "leisure" and the value "park".
 #' @examples
 #' extractPark(aoi)
+#' @keywords internal
 extractPark <- function(aoi){
   park <- aoi%>%
     opq()%>%

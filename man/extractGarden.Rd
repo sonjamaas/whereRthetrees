@@ -18,3 +18,4 @@ A function to extract public garden areas from osm
 \examples{
 extractGarden(aoi)
 }
+\keyword{internal}

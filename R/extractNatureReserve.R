@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "leisure" and the value "nature_reserve".
 #' @examples
 #' extractNatureReserve(aoi)
+#' @keywords internal
 extractNatureReserve <- function(aoi){
   natureReserve <- aoi%>%
     opq()%>%

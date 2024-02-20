@@ -21,3 +21,4 @@ A simple function to get the position as sf object
 \examples{
 getPOV(8.671087, 52.113866)
 }
+\keyword{internal}

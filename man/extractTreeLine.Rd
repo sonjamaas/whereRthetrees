@@ -18,3 +18,4 @@ A function to extract tree lines from OSM
 \examples{
 extractTreeLine(aoi)
 }
+\keyword{internal}

@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "natural" and the value "tree_row".
 #' @examples
 #' extractTreeLine(aoi)
+#' @keywords internal
 extractTreeLine <- function(aoi){
   treeLine <- aoi%>%
     opq()%>%

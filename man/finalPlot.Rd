@@ -73,3 +73,4 @@ finalPlot(streets, river, forest,
           meadow, park, garden,
           natureReserve, pov, xlim, ylim, closestNature, route)
 }
+\keyword{internal}

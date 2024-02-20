@@ -20,7 +20,6 @@
 #'
 #' @returns The final plot of the simple feature collections, the users chosen position (POV),
 #'     the closest point of public available nature and the route to get there.
-#' @export
 #'
 #' @examples
 #' finalPlot(streets, river, forest,
@@ -28,6 +27,7 @@
 #'           treeLine, grassland,
 #'           meadow, park, garden,
 #'           natureReserve, pov, xlim, ylim, closestNature, route)
+#' @keywords internal
 finalPlot <- function(streets, river, forest,                                   # finalPlot becomes a function using all the osm objects and the spatial variables
                       specialForest, wood, singleTree,
                       treeLine, grassland,

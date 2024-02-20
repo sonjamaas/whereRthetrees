@@ -18,3 +18,4 @@ A function to extract nature reserve areas from OSM
 \examples{
 extractNatureReserve(aoi)
 }
+\keyword{internal}

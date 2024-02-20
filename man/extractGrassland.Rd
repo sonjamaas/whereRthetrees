@@ -18,3 +18,4 @@ A function to extract grassland areas from OSM
 \examples{
 extractGrassland(aoi)
 }
+\keyword{internal}

@@ -18,3 +18,4 @@ A function to extract rivers from OSM
 \examples{
 extractRiver(aoi)
 }
+\keyword{internal}

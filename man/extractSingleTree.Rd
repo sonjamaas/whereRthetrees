@@ -18,3 +18,4 @@ A function to extract single trees from OSM
 \examples{
 extractSingleTree(aoi)
 }
+\keyword{internal}

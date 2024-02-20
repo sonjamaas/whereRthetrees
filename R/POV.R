@@ -6,10 +6,10 @@
 #'
 #' @returns The position determined by the two coordinates as
 #'     sf object in the coordinate system 4326.
-#' @export
 #'
 #' @examples
 #' getPOV(8.671087, 52.113866)
+#' @keywords internal
 getPOV <- function(xcoord, ycoord){                                             # getPOV is a simple function for just returning the POV as sf object
 
   coord <- data.frame(x=xcoord, y=ycoord)

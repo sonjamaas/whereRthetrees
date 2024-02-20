@@ -18,3 +18,4 @@ A function to extract park areas from OSM
 \examples{
 extractPark(aoi)
 }
+\keyword{internal}

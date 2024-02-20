@@ -18,3 +18,4 @@ A function to extract meadow areas from OSM
 \examples{
 extractMeadow(aoi)
 }
+\keyword{internal}

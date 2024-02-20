@@ -18,3 +18,4 @@ A function to extract wooda areas from OSM
 \examples{
 extractWood(aoi)
 }
+\keyword{internal}

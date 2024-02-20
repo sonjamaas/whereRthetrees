@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "landuse" and the value "vineyard".
 #' @examples
 #' extractWine(aoi)
+#' @keywords internal
 extractWine <- function(aoi){
   wine <- aoi%>%
     opq()%>%

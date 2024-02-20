@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "landuse" and the value "meadow".
 #' @examples
 #' extractMeadow(aoi)
+#' @keywords internal
 extractMeadow <- function(aoi){
   meadow <- aoi%>%
     opq()%>%

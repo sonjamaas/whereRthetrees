@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+library(tidyverse)
+library(osmdata)
+library(sf)
+library(nominatimlite)
+library(mapsf)
+library(osrm)
+library(geos)
+```
+
+# whereRthetrees
+
+Being outside in nature is proven to be good for body and mind. It can be calming, relaxing and grounding. It can make one happy and more level-headed. So take a break, look for the closest public nature spot and go for a walk!
+
+## Installation
+
+You can install the development version of whereRthetrees from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("sonjamaas/whereRthetrees")
+```
+
+## Example
+
+This is a basic example which shows you how to use this package:
+
+```{r example}
+library(whereRthetrees)
+whereRthetrees(8.671087, 52.113866, 200)
+```
+
+Take a break from work and go hug a tree!

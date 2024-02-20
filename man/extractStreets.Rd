@@ -29,3 +29,4 @@ A function to extract streets from OSM
 \examples{
 extractStreets(aoi)
 }
+\keyword{internal}

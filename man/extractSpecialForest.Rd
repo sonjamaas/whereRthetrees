@@ -18,3 +18,4 @@ A function to extract forest specified as mixed, coniferous or deciduous from OS
 \examples{
 extractSpecialForest(aoi)
 }
+\keyword{internal}

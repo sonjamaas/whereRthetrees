@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "leisure" and the value "garden".
 #' @examples
 #' extractGarden(aoi)
+#' @keywords  internal
 extractGarden <- function(aoi){
   garden <- aoi%>%
     opq()%>%

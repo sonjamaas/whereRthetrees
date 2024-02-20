@@ -15,7 +15,6 @@
 #' @param pov A simple feature of type point.
 #'
 #' @returns A sf object of the closest available public nature
-#' @export
 #'
 #' @examples
 #' findNature(streets, river, forest,
@@ -23,6 +22,7 @@
 #'           treeLine, grassland,
 #'           meadow, park, garden,
 #'           natureReserve, pov)
+#' @keywords internal
 findNature <- function(streets, river, forest, specialForest, wood, singleTree, # findNature fuction uses the osm features and the pov
                        treeLine, grassland, meadow, park, garden,
                        natureReserve, pov){
@@ -152,22 +152,22 @@ findNature <- function(streets, river, forest, specialForest, wood, singleTree, 
     coordClosestMeadow <- distMeadow$destinations[c(nameClosestMeadow),]
   }
 
-  if(nrow(wine$osm_points)==0){
-    nameClosestWine <- NA
-    distClosestWine <- NA
-    coordClosestWine <- as.list(c(lon=NA,lat=NA))
-    print("No wine yard in this area")
-  }else{
-    # get the distance tables from osrmTable
-    distWine <- osrmTable(pov,wine$osm_points,
-                          measure = c('distance'),
-                          osrm.profile = "car")
-    # get closest wine yard point
-    distWinesorted <- as.list(distWine$distances[,order(distWine$distances[1,])])
-    distClosestWine <- as.numeric(distWinesorted[1])
-    nameClosestWine <- names(distWinesorted)[1]
-    coordClosestWine <- distWine$destinations[c(nameClosestWine),]
-  }
+  # if(nrow(wine$osm_points)==0){
+  #   nameClosestWine <- NA
+  #   distClosestWine <- NA
+  #   coordClosestWine <- as.list(c(lon=NA,lat=NA))
+  #   print("No wine yard in this area")
+  # }else{
+  #   # get the distance tables from osrmTable
+  #   distWine <- osrmTable(pov,wine$osm_points,
+  #                         measure = c('distance'),
+  #                         osrm.profile = "car")
+  #   # get closest wine yard point
+  #   distWinesorted <- as.list(distWine$distances[,order(distWine$distances[1,])])
+  #   distClosestWine <- as.numeric(distWinesorted[1])
+  #   nameClosestWine <- names(distWinesorted)[1]
+  #   coordClosestWine <- distWine$destinations[c(nameClosestWine),]
+  # }
 
   if(nrow(singleTree$osm_points)==0){
     nameClosestSingleTree <- NA
@@ -224,7 +224,8 @@ findNature <- function(streets, river, forest, specialForest, wood, singleTree, 
   allPoints <- data.frame(Name = c(nameClosestForest,nameClosestSpecialForest,  # allPoints becomes a data frame with the first column containing the names of closest points
                                    nameClosestWood,nameClosestGrassland,        # of each osm feature group
                                    nameClosestGarden,nameClosestNatureReserve,
-                                   nameClosestMeadow,nameClosestWine,
+                                   nameClosestMeadow,
+                                   #nameClosestWine,
                                    nameClosestSingleTree,nameClosestTreeLine,
                                    nameClosestPark),
                           lon = c(coordClosestForest$lon,                       # the second column containing the longitude of the points
@@ -234,7 +235,7 @@ findNature <- function(streets, river, forest, specialForest, wood, singleTree, 
                                   coordClosestGarden$lon,
                                   coordClosestNatureReserve$lon,
                                   coordClosestMeadow$lon,
-                                  coordClosestWine$lon,
+                                  #coordClosestWine$lon,
                                   coordClosestSingleTree$lon,
                                   coordClosestTreeLine$lon,
                                   coordClosestPark$lon),
@@ -245,7 +246,7 @@ findNature <- function(streets, river, forest, specialForest, wood, singleTree, 
                                   coordClosestGarden$lat,
                                   coordClosestNatureReserve$lat,
                                   coordClosestMeadow$lat,
-                                  coordClosestWine$lat,
+                                  #coordClosestWine$lat,
                                   coordClosestSingleTree$lat,
                                   coordClosestTreeLine$lat,
                                   coordClosestPark$lat),
@@ -253,7 +254,8 @@ findNature <- function(streets, river, forest, specialForest, wood, singleTree, 
                                    distClosestSpecialForest,distClosestWood,
                                    distClosestGrassland,distClosestGarden,
                                    distClosestNatureReserve,distClosestMeadow,
-                                   distClosestWine,distClosestSingleTree,
+                                   #distClosestWine,
+                                   distClosestSingleTree,
                                    distClosestTreeLine,distClosestPark))
 
   # filter the smallest value of the distance column, ignore the NA values

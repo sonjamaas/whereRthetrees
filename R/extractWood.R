@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "natural" and the value "wood".
 #' @examples
 #' extractWood(aoi)
+#' @keywords internal
 extractWood <- function(aoi){
   wood <- aoi%>%
     opq()%>%

@@ -60,3 +60,4 @@ findNature(streets, river, forest,
           meadow, park, garden,
           natureReserve, pov)
 }
+\keyword{internal}

@@ -22,3 +22,4 @@ A function for calculating the x and y limits of an AOI
 \examples{
 xyLimits(8.671087, 52.113866, 300)
 }
+\keyword{internal}

@@ -7,10 +7,10 @@
 #'
 #' @returns A vector of the bounding box around the position,
 #'     therefore the area of interest.
-#' @export
 #'
 #' @examples
 #' spatialExtent(8.671087, 52.113866, 300)
+#' @keywords internal
 spatialExtent <- function(xcoord, ycoord, buffer){                              # spatialExtent becomes a function using x and y coordinates as well as the buffer,
   # which is the area in which the nature points will be searched for
   # make bounding box out of coordinates

@@ -4,6 +4,7 @@
 #' @returns A simple feature collection of OSM-features with the key "landuse" and the value "forest".
 #' @examples
 #' extractForest(aoi)
+#' @keywords  internal
 #'
 extractForest <- function(aoi){
   forest <- aoi%>%

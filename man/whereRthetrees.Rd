@@ -20,7 +20,9 @@ A map of the nature areas around the given position, with a
     route pointing to the closest one.
 }
 \description{
-A function to find the closest public nature area around you
+Being outside in nature is proven to be good for body and mind.
+It can be calming, relaxing and grounding. It can make one happy and more level-headed.
+So take a break, look for the closest public nature spot and go hug a tree!
 }
 \examples{
 whereRtheTrees(8.671087, 52.113866, 300)
