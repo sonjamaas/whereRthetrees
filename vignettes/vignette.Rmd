@@ -12,13 +12,12 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-```
-
-```{r setup}
 library(whereRthetrees)
 ```
 
-# whereRthetrees
+```{r setup}
+
+```
 
 Being outside in nature is proven to be good for body and mind. It can be calming, relaxing and grounding. It can make one happy and more level-headed. So take a break, look for the closest public nature spot and go for a walk!
 
@@ -35,9 +34,9 @@ devtools::install_github("sonjamaas/whereRthetrees")
 
 This basic example shows you how to use this package:
 
-```{r example}
+```{r example, fig.height=6, fig.width=6}
 library(whereRthetrees)
-whereRthetrees(8.671087, 52.113866, 200)
+whereRthetrees(9.943850, 49.802790, 200)
 ```
 
 Watch out, that this package uses the "car" profile from OSRM to calculate the closest point and belonging route. Therefore there might be a gap between your position and the start of the route, because cars can not go everywhere. There also might be a nature area that is closer to you, than the one displayed, that is reachable by foot or bike. To get the according map, please build a OSM-Server and change the profile in the findNature() function.

@@ -13,7 +13,8 @@ whereRthetrees(x, y, buffer)
 
 \item{buffer}{The buffer radius around the position [m]. If too big,
 an error will occur because this package is using the demo-server of osrm
-which restricts the query size to 10000.}
+which restricts the query size to 10000. Therfore, a buffer of 200-300m is
+often sufficient.}
 }
 \value{
 A map of the nature areas around the given position, with a
